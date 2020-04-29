@@ -1,71 +1,147 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
+/* schedular */
+.entry{
+  width: 90%;
+  align-self: center;
+  height: 3em;
 }
 
-textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
+.save{
+  float: right;
+  height: 3em;
 }
 
-.jumbotron {
+.hour{
+  width: 40px;
+}
+
+
+/*** Main ***/
+html, main{
+  height: 100%;
+}
+
+body{
+  background: grey;
+
+}
+
+main {
+  background-color: floralwhite;
+  min-height: 70%;
+}
+
+main .container {
+  padding-top: 40px;
+  padding-bottom: 100px;
+
+}
+
+h4{
+  color: cadetblue;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
   text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
 }
 
-.description{
-  white-space: pre-wrap;
-}
 
-.time-block{
+h5{
+  color: cadetblue;
+  border-bottom: gray 2px solid;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
   text-align: center;
-  border-radius: 15px;
 }
 
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+.content-box{
+  background-color: #FFF;
+  padding: 20px;
+  border: darkgrey 1px solid;
+  color: grey;
 }
 
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+/*** footer ***/
+footer {
+  text-align: center;
+  background-color: grey;
+  border-top: cadetblue 5px solid;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: lightgray;
+  font-size: smaller;
+  width: 100%;
 }
 
-.past {
-  background-color: #d3d3d3;
-  color: white;
+/*** navbar ***/
+.navbar{
+  padding-top:0;
+  padding-bottom: 0;
+  border-bottom: darkgrey 1px solid;
+  color: grey;
 }
 
-.present {
-  background-color: #ff6961;
-  color: white;
+.navbar-brand{
+  background-color: cadetblue;
+  padding: 20px 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
 }
 
-.future {
-  background-color: #77dd77;
-  color: white;
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover{
+  color: #FFF;
 }
 
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+.navbar-nav .nav-link{
+  padding: 0 .5rem;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+.nav-item{
+  border-right: 1px solid gainsboro;
+}
+
+.nav-item:last-child{
+  border-right: none;
+}
+
+@media (max-width:1199px){
+  .entry{
+    width: 88%;
+  }
+}
+
+@media (max-width: 991px){
+  .navbar .container-lg, 
+  .navbar-brand{
+      display: block;
+  }
+
+  .navbar{
+      padding:0;
+  }
+
+  .navbar-brand{
+      margin-right: 0;
+      margin-left: 0;
+      text-align: center;
+  }
+
+  .navbar-nav{
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 10px;
+      margin-bottom:10px;
+  }
+  a{
+      margin-right: 10px;
+      margin-left: 10px;
+  }
+
+  /*adjusting boxes for data entry */
+  .entry{
+    width: 84%;
+  }
 }
