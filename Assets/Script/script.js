@@ -4,6 +4,60 @@ var taskArray=["this is the task for 9am","this is the task for 10am","this is t
                 "this is the task for 1pm", "this is the task for 2pm", "this is the task for 3pm", "this is the task for 4pm",
                 "this is the task for 5pm"];
 
+init()
+
+$('.content-box').on('click', function(event){
+
+    event.preventDefault()
+
+    var i = '';
+
+    console.log(event.target.dataset.index);
+
+    i = event.target.dataset.index;
+
+    console.log(taskArray[i]);
+
+    input = $('.entry').eq(i).val();
+
+    console.log(input);
+
+    taskArray[i] = input;
+
+    console.log(taskArray[i]);
+
+    localStorage.setItem("taskArray", JSON.stringify(taskArray));
+
+    var storedTaskArray = JSON.parse(localStorage.getItem("taskArray"));
+
+    console.log(storedTaskArray);
+
+});
+
+function init(){
+    var storedTaskArray = JSON.parse(localStorage.getItem("taskArray"));
+    console.log(storedTaskArray);
+
+    if(storedTaskArray !== null){
+        taskArray = storedTaskArray;
+    }
+
+    console.log(taskArray);
+
+    for(i=0;i<8;i++){
+
+        task = taskArray[i];
+
+        console.log(task);
+
+        console.log($('.entry').eq[i].attr("value"))
+        $('.entry').eq[i].attr("value", task);
+
+    }
+
+};
+
+
 // $('#inputForm').attr("value", taskArray[0]);
 
 // $('#submitForm').on('click', function(event){
@@ -47,37 +101,11 @@ var taskArray=["this is the task for 9am","this is the task for 10am","this is t
 //     console.log(taskArray[1])
 
 // });
-i = 3;
 
-$('.content-box').on('click', function(event){
-    event.preventDefault()
+// localStorage.removeItem("taskArray")
+// localStorage.removeItem('taskMatrix')
 
-    console.log(event.target.dataset.index);
-
-    i = event.target.dataset.index
-
-    console.log(taskArray[i]);
-
-    updater();
-})
-
-function updater(i){
-
-    console.log(taskArray[i]);
-
-    console.log($('.entry').data-index[i].val().trim())
-
-    // var input = $('.entry').data-index[i].val().trim();
-
-    // console.log(input);
-
-    // taskArray[0] = input;
-
-    // console.log(taskArray[0]);
-
-    // localStorage.setItem('taskArray', JSON.stringify(taskArray));
-    // JSON.parse(localStorage.getItem('taskArray'));
-
-    // console.log(taskArray[0])
-
-};
+// .format('dddd[,] MMMM Do')
+// console.log(moment().format());
+// console.log(moment());
+// console.log()
