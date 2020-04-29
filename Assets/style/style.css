@@ -38,8 +38,8 @@ main .container {
 
 h4{
   color: cadetblue;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+  /* margin-bottom: 20px; */
+  /* padding-bottom: 10px; */
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   text-align: center;

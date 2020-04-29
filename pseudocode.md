@@ -1,14 +1,16 @@
-# Major Task 1 - Build the HTML for the calendar
+<!-- # Major Task 1 - Build the HTML for the calendar -->
 
-* Create Styles
+<!-- * Create Styles -->
 
-# Major Task 2 - Print the current date to the top fo the page
+<!-- # Major Task 2 - Print the current date to the top fo the page -->
 
-* Play and test moment.js
+<!-- * Play and test moment.js -->
 
-* Figure how to format a date string
+<!-- * Figure how to format a date string -->
 
-* Get the current time and format it
+<!-- * Get the current time and format it -->
+
+(DONE)
 
 # Major Task 3 - We need a way to save our tasks for each hour
 
