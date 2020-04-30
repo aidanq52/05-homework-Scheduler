@@ -10,13 +10,14 @@
 
 <!-- * Get the current time and format it -->
 
-(DONE)
 
-# Major Task 3 - We need a way to save our tasks for each hour
+<!-- # Major Task 3 - We need a way to save our tasks for each hour
 
 * Saving tasks into local storage
 
-* Load data from our local storage 
+* Load data from our local storage  -->
+
+(DONE)
 
 # Major Task 4 - Get the current hour of the day and compare with the hour blocks on the page
 

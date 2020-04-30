@@ -61,10 +61,49 @@ function init(){
 };
 
 //trying to figure out how to use moment API
-// .format('dddd[,] MMMM Do')
-// console.log(moment().format());
+timeCheck()
+
+function timeCheck(){
+
+    var currentHour = parseInt(moment().format('HH')) - 9;
+
+    console.log(currentHour);
+
+    for(i = 0; i<currentHour;i++){
+        // .dataset.index
+        console.log("earlier today");
+        $("input[data-index='"+i+"']").css("backgroundColor","lightgrey");
+    }
+
+    $("input[data-index='"+currentHour+"']").css("backgroundColor","crimson");
+
+    for(i=currentHour+1;i<9;i++){
+        $("input[data-index='"+i+"']").css("backgroundColor","lightgreen")
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+///////*****OLD CODE THAT I COULD DELETE *//////
+
+// console.log(moment().format('dddd[,] MMMM Do'));
+// console.log(parseInt(moment().format()));
+
 // console.log(moment());
-// console.log()
+
+// console.log(moment("20111031", "YYYYMMDD").fromNow());
+// console.log(moment().calendar());
 
 
 // $('#inputForm').attr("value", taskArray[0]);

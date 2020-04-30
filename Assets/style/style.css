@@ -14,6 +14,30 @@
   width: 40px;
 }
 
+.span{
+  padding: 0;
+  margin: 0;
+
+}
+
+@media (max-width:1199px){
+  .entry{
+    width: 88%;
+  }
+}
+
+@media(max-width:991px){
+  .entry{
+    width: 84%;
+  }
+}
+
+@media(max-width:768px){
+  .entry{
+    width: 78%;
+  }
+}
+
 
 /*** Main ***/
 html, main{
@@ -107,11 +131,6 @@ footer {
   border-right: none;
 }
 
-@media (max-width:1199px){
-  .entry{
-    width: 88%;
-  }
-}
 
 @media (max-width: 991px){
   .navbar .container-lg, 
@@ -139,9 +158,6 @@ footer {
       margin-right: 10px;
       margin-left: 10px;
   }
-
-  /*adjusting boxes for data entry */
-  .entry{
-    width: 84%;
-  }
 }
+
+
